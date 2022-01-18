@@ -1,0 +1,123 @@
+ro.vendor.rk_sdk=1
+ro.boot.wificountrycode=CN
+persist.sys.timezone=Asia/Shanghai
+persist.sys.language=zh
+ro.product.locale.language=zh
+persist.sys.country=CN
+ro.product.region=CN
+persist.logd.size=16777216
+#是否开启主屏旋转
+persist.sys.main.rotation=true
+#主屏幕旋转角度，0 90 180 270
+persist.sys.displayrot=0
+#副屏幕旋转角度，0 1 2 3 4跟随主屏
+persist.sys.extern.rotation=true
+persist.sys.rotation.einit=4
+#副屏同显的时候是否拉伸铺满
+persist.sys.rotation.efull=true
+persist.sys.rotation.efull-1=true
+persist.sys.rotation.efull-2=true
+#HOST:1 SLAVE:2
+persist.sys.usb.otg.mode=1
+#1 直接关机   2 走休眠唤醒流程长按弹窗   3 短按弹窗长按关机   4 走休眠唤醒流程长按直接关机
+persist.sw.directlypoweroff=3
+#控制屏幕超时是否进真休眠，false表示不进休眠 frameworks/base/services/java/com/android/server/SystemServer.java
+persist.sys.powersave.open=false
+#厂商识别码
+persist.ys.factroy.code=YSTF6255
+vendor.rild.libpath=/vendor/lib/libreference-ril-ec20.so
+vendor.rild.libargs=-d /dev/ttyUSB2
+ro.telephony.default_network=9
+vendor.hwc.device.primary=DSI 
+vendor.hwc.device.extend=HDMI-A
+#是否开启屏幕密度选项
+persist.density.display=true
+#是否开启apk自动旋转
+persist.sys.approtate=false
+persist.sys.audio.enforce_safevolume=false
+#导航栏是否隐藏，隐藏0，显示1
+persist.sys.statebarstate=0
+#导航栏是否可以滑出，可以1，不可以0
+persist.sys.statebarslide=1
+#通知栏是否可以下拉，可以0，不可以1
+persist.sys.disexpandbar=0
+#状态栏是否可以打开，不可以0，可以1
+persist.sys.hidetopbar=1
+persist.vendor.resolution.aux=1920x1080p60
+persist.vendor.hdmiconfigxy=1
+persist.sys.ysdebug=false
+persist.sys.screenrecorder=0
+persist.vendor.swaplcd=0
+persist.vendor.backlight=true
+persist.sys.rotationWay=1
+persist.sys.tipnotifybar=0
+persist.sys.touchmain=1.7.5
+persist.sys.touchmain.okay=true
+persist.sys.touchex=1.7.7
+persist.sys.touchex.okay=true
+persist.sys.softkeyboard=1
+persist.sys.developer.options=true
+ro.sf.lcd_density=160
+#是否开启灾难模式
+persist.sys.disaster=1
+#摄像头镜像非镜像控制
+persist.hal.fcam.mirror=false
+persist.hal.bcam.mirror=true
+#摄像头旋转模式选择
+persist.sys.camerarot=1
+#控制麦克风通道 normal usb speaker headset
+persist.sys.mic.force=normal
+#InputReader input模式 1为原生系统
+persist.sys.tp.mode=0
+#是否开启打电话功放使能功能
+persist.phone.spkCtrl=true
+#网络复位接口
+persist.sys.eth_fix=false
+persist.sys.wifi_fix=false
+persist.sys.phone_fix=false
+persist.sys.eth_website=www.baidu.com
+persist.sys.wifi_website=www.baidu.com
+#单位是秒
+persist.sys.checktime=300 
+persist.sys.phone_website=www.baidu.com
+#是否开启保存日志功能 save log file in /data/local/yslogs
+persist.vendor.log_android=0
+persist.vendor.log_kernel=0
+persist.vendor.log_radio=0
+#开机启动应用设置 值为包名 none为未设置
+persist.sys.openapp=none
+#禁用WIFI 0:不禁用 1:禁用
+persist.sys.limitwifi=0
+#禁用蓝牙 0:不禁用 1:禁用
+persist.sys.limitbt=0
+#触摸校准角度
+persist.sys.touch.angle=null
+#串口2 TX RX的状态 0关闭 作为调试口 1开启作为普通串口使用
+persist.sys.debug.uart=0
+#网络ADB 1开启 0关闭
+persist.internet.adb.enable=1
+#拦截用户的白名单app false不拦截,true拦截
+persist.neo.WhiteList=false
+#拦截用户的黑名单app false不拦截,true拦截
+persist.neo.blackList=false
+#用户数据分区是否开启实时同步 0：不开启 1：开启
+persist.sys.datasync=0
+#设置蓝牙是否可以被发现 0：不发现 1：发现
+persist.sys.findbluetooth=1
+#是否开启wifi 以太网共存功能
+persist.net.wifiethernet.mode=false
+#是否开启4G共享以太网功能
+persist.net.4gshareeth.mode=false
+#是否开启WIFI共享以太网功能
+persist.net.wifishareeth.mode=false
+#是否开启eth1共享eth0功能
+persist.net.eth1shareeth0.mode=false
+#是否开启anr弹窗 0：关闭 1：打开
+ro.allow.anr.show=0
+#是否禁止外部存储自动生成常规目录 false：不禁止 true：禁止
+persist.sys.disable_exfile=true
+#是否屏蔽软键盘，屏蔽0，不屏蔽1
+persist.sys.softkeyboard=1
+#定时开关机版本号
+persist.sys.poweronoffversion=YS_1.0_20190217
+
