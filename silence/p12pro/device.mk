@@ -1,6 +1,7 @@
 #
 # Copyright (c) 2020 Rockchip Electronics Co., Ltd
 #
+$(call inherit-product, vendor/partner_gms/products/gms_backup.mk)
 PRODUCT_PACKAGES += \
 
 # Disable partial updates
@@ -11,6 +12,7 @@ BOARD_SEPOLICY_DIRS += vendor/rockchip/hardware/interfaces/neuralnetworks/1.0/de
 
 
 TARGET_SYSTEM_PROP += device/silence/p12pro/system.prop
+TARGET_PRODUCT_PROP += device/silence/p12pro/product.prop
 PRODUCT_PACKAGE_OVERLAYS := device/silence/p12pro/overlay
 # enable this for support f2fs with data partion
 BOARD_USERDATAIMAGE_FILE_SYSTEM_TYPE := ext4
@@ -23,7 +25,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.product.ota.host = www.rockchip.com:2300 \
     ro.vendor.sdkversion = $(CURRENT_SDK_VERSION) \
-    vendor.gralloc.disable_afbc = 0
+    vendor.gralloc.disable_afbc = 0 \
+    ro.product.product.brand = Lenovo \
+    ro.product.vendor.device = Q706F
 
 #
 # add Rockchip properties here
@@ -49,5 +53,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
                 ro.kernel.android.checkjni=0 \
                 ro.build.shutdown_timeout=6 \
                 persist.enable_task_snapshots=false \
-                ro.vendor.frameratelock=true
+                ro.vendor.frameratelock=true \
+                
 

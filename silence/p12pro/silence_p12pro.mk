@@ -30,7 +30,7 @@
 #
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/mainline_system.mk)
-$(call inherit-product, device/silence/p12pro/device.mk)
+
 
 # Enable mainline checking for excat this product name
 ifeq (aosp_arm64_ab,$(TARGET_PRODUCT))
@@ -47,6 +47,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_system_ext.mk)
 # All components inherited here go to product image
 #
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_product.mk)
+$(call inherit-product, device/silence/p12pro/device.mk)
 
 #
 # Special settings for GSI releasing
@@ -55,5 +56,5 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/legacy_gsi_release.mk)
 
 PRODUCT_NAME := silence_p12pro
 PRODUCT_DEVICE := p12pro
-PRODUCT_BRAND := Android
+PRODUCT_BRAND := Lenovo
 PRODUCT_MODEL := AOSP on ARM64
