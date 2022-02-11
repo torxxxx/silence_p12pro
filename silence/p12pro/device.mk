@@ -18,6 +18,13 @@ PRODUCT_PACKAGE_OVERLAYS := device/silence/p12pro/overlay
 BOARD_USERDATAIMAGE_FILE_SYSTEM_TYPE := ext4
 
 
+AB_OTA_UPDATER := true
+AB_OTA_PARTITIONS := \
+      system 
+PRODUCT_PACKAGES += \
+      update_engine \
+      update_verifier
+
 
 
 PRODUCT_COPY_FILES += \

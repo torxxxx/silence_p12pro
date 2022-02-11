@@ -28,4 +28,6 @@
     <bool name="config_enableLockScreenRotation">true</bool>
     <bool name="config_allowAllRotations">true</bool>
     <bool name="config_supportAutoRotation">true</bool>
+    <bool name="config_lidControlsScreenLock">true</bool>
+    <bool name="config_lidControlsSleep">true</bool>
 </resources>
