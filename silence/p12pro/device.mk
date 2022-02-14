@@ -28,6 +28,8 @@ PRODUCT_PACKAGES += \
 
 
 PRODUCT_COPY_FILES += \
+	    $(LOCAL_PATH)/permission/permission-1.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/permission-1.xml \
+	    $(LOCAL_PATH)/bootanimation.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation.zip \
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.product.ota.host = www.rockchip.com:2300 \
