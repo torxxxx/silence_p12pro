@@ -34,6 +34,7 @@ BOARD_ROOT_EXTRA_SYMLINKS += /vendor/lib/dsp:/dsp
 BOARD_ROOT_EXTRA_SYMLINKS += /vendor/firmware_mnt/image:/firmware/image
 BOARD_ROOT_EXTRA_SYMLINKS += /vendor/firmware_mnt/verinfo:/firmware/verinfo
 BOARD_EXT4_SHARE_DUP_BLOCKS := false
+BOARD_SYSTEMIMAGE_PARTITION_SIZE  :=5368709120
 # TODO(b/36764215): remove this setting when the generic system image
 # no longer has QCOM-specific directories under /.
 BOARD_SEPOLICY_DIRS += build/make/target/board/generic_arm64/sepolicy

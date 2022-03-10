@@ -57,4 +57,4 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/legacy_gsi_release.mk)
 PRODUCT_NAME := silence_p12pro
 PRODUCT_DEVICE := p12pro
 PRODUCT_BRAND := Lenovo
-PRODUCT_MODEL := 胡孝怡天下第一
+PRODUCT_MODEL := silence_p12pro

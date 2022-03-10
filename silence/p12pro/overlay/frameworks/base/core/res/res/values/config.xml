@@ -30,4 +30,6 @@
     <bool name="config_supportAutoRotation">true</bool>
     <bool name="config_lidControlsScreenLock">true</bool>
     <bool name="config_lidControlsSleep">true</bool>
+    <bool name="config_supportDoubleTapWake">true</bool>
+    <string translatable="false" name="config_ntpServer">time.windows.com</string>    
 </resources>
